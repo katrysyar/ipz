@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.logo,
+.contact-info {
+    float: left;
+    width: 50%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ffcc00;
+    text-decoration: none;
+    text-align: left;
+}
+
+.contact-info {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.tours {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.tour-card {
+    width: 30%;
+    margin: 0 1.5%;
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tour-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.tour-card:hover p {
+    color: #ffcc00;
+}
+
+
+.tour-card .overlay {
+    position: absolute;
+    top: 60%; 
+    left: 0;
+    width: 100%;
+    height: 30%; 
+    background-color: rgba(255, 165, 0, 1); 
+    display: none; 
+    z-index: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tour-card:hover .overlay {
+    display: block; 
+}
+
+.overlay p {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.overlay p:nth-child(2) {
+    margin-right: 0; 
+}
+
+footer {
+    clear: both;
+}
