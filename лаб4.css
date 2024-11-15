@@ -1,0 +1,216 @@
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --background-color: #f2f2f2;
+    --accent-color: #FF9800;
+    --facebook-color: #3b5998;
+    --google-color: #db4437; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('steven.png');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons .vertical-line {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.header-text {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 48%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.social-buttons .facebook-btn {
+    background-color: var(--facebook-color);
+}
+
+.social-buttons .google-btn {
+    background-color: var(--google-color);
+}
+
+.social-buttons button img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.social-buttons button:hover {
+    opacity: 0.8;
+}
+
+.or-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    position: relative;
+    text-align: left;
+}
+
+.login-form h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.login-link {
+    float: right;
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}

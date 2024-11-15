@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="лаб4.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Journey</h1>
+        </div>
+        <div class="header-right">
+            <div class="header-icons">
+                <img src="ікон1.png" alt="Icon 1" class="header-icon">
+                <div class="vertical-line"></div>
+                <img src="ікон2.png" alt="Icon 2" class="header-icon">
+                <div class="vertical-line"></div>
+                <img src="ікон3.png" alt="Icon 3" class="header-icon">
+            </div>
+            <div class="header-text">
+                <p>Вітаю! <a href="#">Зареєструйтеся</a> або <a href="#">Увійдіть</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>Реєстрація
+                <a href="#" class="login-link">Увійти</a>
+            </h2>
+            <form>
+                <div class="social-buttons">
+                    <button type="button" class="facebook-btn">
+                        <img src="фейс.png" alt="Facebook"> Facebook
+                    </button>
+                    <button type="button" class="google-btn">
+                        <img src="гугл.png" alt="Google+"> Google+
+                    </button>
+                </div>
+              
+                <div class="or-text">
+                    <p>або</p>
+                </div>
+
+                <input type="text" id="name" name="name" placeholder="Ім'я" required>
+                <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
+                <input type="email" id="email" name="email" placeholder="Електронна пошта" required>
+                <input type="password" id="password" name="password" placeholder="Пароль" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Підтвердження паролю" required>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Погоджуюсь з умовами</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Створити аккаунт</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Journey</p>
+    </footer>
+</body>
+</html>
